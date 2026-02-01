@@ -51,6 +51,10 @@ Create or update `~/.claude/settings.json`:
         "hooks": [
           {
             "type": "command",
+            "command": "bun /path/to/claude-mem-secure/plugin/scripts/worker-service.cjs start"
+          },
+          {
+            "type": "command",
             "command": "bun /path/to/claude-mem-secure/plugin/scripts/worker-service.cjs hook claude-code context"
           }
         ]
